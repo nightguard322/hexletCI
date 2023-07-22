@@ -1,7 +1,0 @@
-name: first-action
-on: push
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      
