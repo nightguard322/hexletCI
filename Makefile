@@ -16,3 +16,9 @@ test:
 
 test-coverage:
 	composer exec --verbose phpunit tests -- --coverage-clover build/logs/clover.xml
+say-hello:
+	[bash]
+	----
+	make say-hello
+	Hello, World!
+	----
