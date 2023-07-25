@@ -1,8 +1,8 @@
 name: first-action
 on: push
 jobs:
-  buildJob:
-    runs-on: ubuntu-latest
-    steps:
-        uses: actions/checkout@v2
-      - run: make say-hello
+    buildJob:
+        runs-on: ubuntu-latest
+        steps:
+            uses: actions/checkout@v2
+          - run: make say-hello
