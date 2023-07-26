@@ -5,10 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: "shivammathur/setup-php@v2"
+    - uses: MilesChou/composer-action@master
         with:
-          php-version: "latest"
-    - uses: "ramsey/composer-install@v2"
+          args: install
     - run: make install
     - run: make lint
     - run: make test-coverage
