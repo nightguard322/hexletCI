@@ -9,5 +9,6 @@ jobs:
         with:
           php-version: "latest"
     - uses: "ramsey/composer-install@v2"
+    - run: make install
     - run: make lint
     - run: make test-coverage
